@@ -191,6 +191,7 @@ h3 {
    cursor:pointer;
    transition:0.3s;
    justify-items: end;
+   font-size: clamp(0.9rem, 2vw, 1rem);
   
     }
 
