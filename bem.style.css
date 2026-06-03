@@ -29,7 +29,7 @@ video {
 :root {
   --background-color: #f8dede;
   --primary-color: #8b1e1e;
-  --max-width: 700px;
+  --max-width: 43.75rem;
   
 }
 
@@ -40,8 +40,8 @@ video {
 body {
   line-height: 1.7;
   background-color: var(--background-color);
+   font-size: clamp(0.85rem, 1.5vw, 1rem);
   font-family: Arial, sans-serif;
-  font-size: 1rem;
   margin: 0;
   padding: 1rem;
   
@@ -58,7 +58,6 @@ body {
 
 }
 
-.recipe-card__header ,
 .recipe-card__ingredients,
 .recipe-card__steps,
 .recipe-card__gallery{
@@ -70,23 +69,33 @@ body {
 
 
 /* BEM structure for recipe card */
-.recipe-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  
+
+
+
+.hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background-color: white;
+}
+.hero__content {
+  text-align: left;
+  padding: 1.5rem;
 }
 
-h1 {
+
+
+.hero img {
+  width: 100%;
+  height: clamp(15.625rem, 40vw, 21.875rem);
+  object-fit: cover;
+   
+}
+
+.hero__content h1 {
   color: var(--primary-color);
-  font-family: Arial, sans-serif;
   font-size: clamp(1.5rem, 5vw, 3rem);
-  line-height:1.2;
-  padding-top: 3rem;
-  
-
-
+  line-height: 1.2;
+ 
 
 }
 
@@ -94,6 +103,18 @@ h1,
 h2,
 h3 {
   font-weight: 600;
+}
+
+
+.hero__content p {
+  color: black;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin-top: 1rem;
+    display: inline-block;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    Line-height: 1.5;
+   
 }
 /* BEM structure for recipe card */
 .recipe-card__description {
@@ -104,13 +125,13 @@ h3 {
 
 /* Nested CSS: styles for images inside gallery */
 .recipe-card__gallery-images {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 
   img {
     width: 48%;
-    height: 30vh;
+    height: clamp(10rem, 25vw, 15rem);
     object-fit: cover;
     display: block;
   }
@@ -127,7 +148,7 @@ h3 {
   width:100%;
   display:flex;
   justify-content:space-between;
-  align-items:end;
+  align-items:center;
 
    margin: 0 auto;
    
@@ -150,7 +171,7 @@ h3 {
    text-decoration: none;
   color: var(--primary-color);
  font-weight: 600;
- align-items:end;
+ font-size: clamp(0.9rem, 2vw, 1rem);
  
 }
 
@@ -160,8 +181,8 @@ h3 {
 
 
 .navbar__login {
-  background-color:white;
-    color:  var(--primary-color);
+  background-color:var(--primary-color);
+    color: white;
     font-weight: 700;
     text-decoration: none;
      border: none;
@@ -174,66 +195,33 @@ h3 {
     }
 
     .navbar__login:hover{
-   background-color:#d94b4b;;
+   background-color:hsl(0, 65%, 57%);;
    color:white;
 }
-    
-    
-
-
-
 
 @media (max-width: 768px) {
-  .recipe-card {
-    width: 95%;
-    
-  
-    
-    
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
-  .recipe-card__description {
-    padding: 1rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
+  .navbar__links {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .recipe-card__gallery-images {
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
   }
 
-  h1 {
-    font-size: 2.5rem;
-    line-height:1.2;
-    overflow: hidden;
+  .recipe-card__gallery-images img {
+    width: 100%;
   }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-    overflow: hidden;
-  }
-      .navbar{
-      flex-direction:column;
-      justify-content: center;
-      gap: 0.8rem;
-      padding:1rem;
-      overflow: hidden;
-   }
-
-   .navbar__links{
-   /* flex-direction: column;*/
-   /* justify-content: center;*/
-    gap:1rem;
+}
     
-
-      
-   }
-
+    
 
   /* Skiplink */
   .skip-link {
@@ -249,5 +237,7 @@ h3 {
     padding: 0.625rem;
     z-index: 100;
   }
-}
+
+
+  
 
