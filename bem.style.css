@@ -237,6 +237,10 @@ h3 {
   color: white;
 }
 
+footer p {
+  text-align: center;
+  color: var(--color-primary);
+}
 
 
 
