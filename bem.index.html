@@ -80,7 +80,30 @@
             <img src="pannkakor3.jpg" alt="Pannkakor med bär" />
           </div>
         </section>
+
+        <section class="recipe-card__rating">
+  <h2>Sätt betyg på receptet</h2>
+  <form class="rating-form" action="#" method="post">
+    <p>Hur många stjärnor ger du receptet?</p>
+      <label><input type="radio" name="rating" value="1"> ⭐</label>
+    <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+    <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+    <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+    <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+
+    <label for="comment">Kommentar:</label>
+    <textarea
+      id="comment"
+      name="comment"
+      placeholder="Skriv vad du tyckte om receptet..."
+    ></textarea>
+
+    <button type="submit">Skicka betyg</button>
+  </form>
+</section>
+
       </article>
+
     </main>
   </body>
 </html>
