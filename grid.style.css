@@ -1,3 +1,4 @@
+ /* Reset */
  I *,
 *::before,
 *::after {
@@ -22,6 +23,7 @@ video {
   object-fit: cover;
 }
 
+/* Props */
 :root {
   /* Colors */
   --color-background: hsl(22, 100%, 98%);
@@ -40,6 +42,7 @@ video {
   --font-size-medium: 1rem;
 }
 
+/* Global */
 body {
   background-color: var(--color-background);
   line-height: 1;
@@ -49,6 +52,17 @@ body {
   margin: auto;
 }
 
+footer {
+  text-align: center;
+  padding: var(--spacing-large);
+}
+
+footer p {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+/* Blocks */
 .hero{
   background-color: var(--color-container);
   padding: var(--spacing-large);
@@ -115,17 +129,6 @@ body {
 }
 
 
-
-
-footer {
-  text-align: center;
-  padding: var(--spacing-large);
-}
-
-footer p {
-  text-align: center;
-  color: var(--color-primary);
-}
 /*  
 
 @media (max-width: 768px) {

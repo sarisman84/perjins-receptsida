@@ -5,49 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pannkaksrecept</title>
 
-    
     <link rel="stylesheet" href="bem.style.css" />
   </head>
   <body>
     <header>
-   
-    <nav class="navbar" aria-label="Menu">
-
-      <div class ="navbar__logo">
-         <img src="lotus.jpg" alt="Min receptsida logga">
-      </div>
-      
+      <nav class="navbar" aria-label="Menu">
+        <div class="navbar__logo">
+          <img src="lotus.jpg" alt="Min receptsida logga" />
+        </div>
 
         <ul class="navbar__links">
-
           <li><a href="#">Hem</a></li>
           <li><a href="#">Recept</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
-       
-        <button class="navbar__login">
-   Logga in
-</button>
-      
+
+        <button class="navbar__login">Logga in</button>
       </nav>
     </header>
 
-    
-        <section class="hero">
-  <img src="pannkakor.jpg" alt="Bild på pannkakor">
+    <section class="hero">
+      <img src="pannkakor.jpg" alt="Bild på pannkakor" />
 
-  <div class="hero__content">
-    <h1>Enkelt recept på pannkakor</h1>
-    <p>Gör traditionella tunna pannkakor med detta enkla recept.</p>
-  </div>
-</section>
-       
+      <div class="hero__content">
+        <h1>Enkelt recept på pannkakor</h1>
+        <p>Gör traditionella tunna pannkakor med detta enkla recept.</p>
+      </div>
+    </section>
 
-       <main id="main-content">
-        
-        <article class="recipe-card">
-          
-<section class="recipe-card__ingredients">
+    <main id="main-content">
+      <article class="recipe-card">
+        <section class="recipe-card__ingredients">
           <h2>Ingredienser</h2>
           <p>För 4 portioner</p>
           <ul>
@@ -84,36 +72,38 @@
         </section>
 
         <section class="recipe-card__rating">
-  <h2>Sätt betyg på receptet</h2>
-  <form class="rating-form" action="#" method="post">
-    <p>Hur många stjärnor ger du receptet?</p>
-      <label><input type="radio" name="rating" value="1"> ⭐</label>
-    <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
-    <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
-    <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
-    <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+          <h2>Sätt betyg på receptet</h2>
+          <form class="rating-form" action="#" method="post">
+            <p>Hur många stjärnor ger du receptet?</p>
+            <label><input type="radio" name="rating" value="1" /> ⭐</label>
+            <label><input type="radio" name="rating" value="2" /> ⭐⭐</label>
+            <label><input type="radio" name="rating" value="3" /> ⭐⭐⭐</label>
+            <label
+              ><input type="radio" name="rating" value="4" /> ⭐⭐⭐⭐</label
+            >
+            <label
+              ><input type="radio" name="rating" value="5" /> ⭐⭐⭐⭐⭐</label
+            >
 
-    <label for="comment">Kommentar:</label>
-    <textarea
-      id="comment"
-      name="comment"
-      placeholder="Skriv vad du tyckte om receptet..."
-    ></textarea>
+            <label for="comment">Kommentar:</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Skriv vad du tyckte om receptet..."
+            ></textarea>
 
-    <button type="submit">Skicka betyg</button>
-  </form>
-</section>
-
+            <button type="submit">Skicka betyg</button>
+          </form>
+        </section>
       </article>
-
     </main>
 
     <footer class="site-footer">
-  <p>&copy; 2026 Receptsidan. Alla rättigheter förbehållna.</p>
-  <p>
-    Kontakt:
-    <a href="mailto:info@example.com">info@example.com</a>
-  </p>
-</footer>
+      <p>&copy; 2026 Receptsidan. Alla rättigheter förbehållna.</p>
+      <p>
+        Kontakt:
+        <a href="mailto:info@example.com">info@example.com</a>
+      </p>
+    </footer>
   </body>
 </html>
